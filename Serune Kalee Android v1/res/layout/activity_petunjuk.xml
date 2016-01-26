@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Cara Memainkan"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </RelativeLayout>
+		
+		<ImageView
+		    android:id="@+id/imageView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="90dp"
+		    android:src="@drawable/petunjuk" />
+
+		<TextView
+		    android:id="@+id/TextView01"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:text="Adaptasi Interface Serune Kalee dengan Serune Kalee Asli \n Warna Merah pada lubang nada menandakan lubang tertutup sesuai dengan nada yang dimainkan" />
+
+		<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+		    <TextView
+		        android:id="@+id/txtView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"
+		        android:gravity="center"
+		        android:text="== DO =="
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+		</RelativeLayout>
+		
+		<ImageView
+		    android:id="@+id/imgView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="90dp"
+		    android:src="@drawable/nada_do" />
+	    <TextView
+	        android:id="@+id/txtView01"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/imgView1"
+	        android:layout_centerVertical="true"
+	        android:text="Tekan lubang terakhir yang menandakan lubang nada pertama hingga terakhir tertutup" />
+
+    	<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+		    <TextView
+		        android:id="@+id/txtView2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"
+		        android:gravity="center"
+		        android:text="== RE =="
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+		</RelativeLayout>
+		
+		<ImageView
+		    android:id="@+id/imgView2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="90dp"
+		    android:src="@drawable/nada_re" />
+	    <TextView
+	        android:id="@+id/txtView02"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/imgView2"
+	        android:layout_centerVertical="true"
+	        android:text="Tekan lubang ke-6 yang menandakan lubang nada pertama hingga ke-6 tertutup" />
+	    
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+		    <TextView
+		        android:id="@+id/txtView3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"
+		        android:gravity="center"
+		        android:text="== MI =="
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+		</RelativeLayout>
+		
+		<ImageView
+		    android:id="@+id/imgView3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="90dp"
+		    android:src="@drawable/nada_mi" />
+	    <TextView
+	        android:id="@+id/txtView03"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/imgView3"
+	        android:layout_centerVertical="true"
+	        android:text="Tekan lubang ke-5 yang menandakan lubang nada pertama hingga ke-5 tertutup" />
+	    
+	    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+		    <TextView
+		        android:id="@+id/txtView4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"
+		        android:gravity="center"
+		        android:text="== FA =="
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+		</RelativeLayout>
+		
+		<ImageView
+		    android:id="@+id/imgView4"
+		    android:layout_width="wrap_content"
+		    android:layout_height="90dp"
+		    android:src="@drawable/nada_fa" />
+	    <TextView
+	        android:id="@+id/txtView04"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/imgView4"
+	        android:layout_centerVertical="true"
+	        android:text="Tekan lubang ke-4 yang menandakan lubang nada pertama hingga ke-4 tertutup" />
+	    
+	    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+		    <TextView
+		        android:id="@+id/txtView5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"
+		        android:gravity="center"
+		        android:text="== SOL =="
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+		</RelativeLayout>
+		
+		<ImageView
+		    android:id="@+id/imgView5"
+		    android:layout_width="wrap_content"
+		    android:layout_height="90dp"
+		    android:src="@drawable/nada_sol" />
+	    <TextView
+	        android:id="@+id/txtView05"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/imgView5"
+	        android:layout_centerVertical="true"
+	        android:text="Tekan lubang ke-4 yang menandakan lubang nada pertama hingga ke-4 tertutup" />
+	    
+	    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+		    <TextView
+		        android:id="@+id/txtView6"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"
+		        android:gravity="center"
+		        android:text="== LA =="
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+		</RelativeLayout>
+		
+		<ImageView
+		    android:id="@+id/imgView6"
+		    android:layout_width="wrap_content"
+		    android:layout_height="90dp"
+		    android:src="@drawable/nada_la" />
+	    <TextView
+	        android:id="@+id/txtView06"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/imgView6"
+	        android:layout_centerVertical="true"
+	        android:text="Tekan lubang ke-2 yang menandakan lubang nada pertama hingga ke-2 tertutup" />
+	    
+	    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+		    <TextView
+		        android:id="@+id/txtView7"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"
+		        android:gravity="center"
+		        android:text="== SI =="
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+		</RelativeLayout>
+		
+		<ImageView
+		    android:id="@+id/imgView7"
+		    android:layout_width="wrap_content"
+		    android:layout_height="90dp"
+		    android:src="@drawable/nada_si" />
+	    <TextView
+	        android:id="@+id/txtView07"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/imgView7"
+	        android:layout_centerVertical="true"
+	        android:text="Tekan lubang ke-1 yang menandakan lubang nada pertama hingga ke-1 tertutup" />
+	    
+	    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+		    <TextView
+		        android:id="@+id/txtView8"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"
+		        android:gravity="center"
+		        android:text="== DO Tinggi =="
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+		</RelativeLayout>
+		
+		<ImageView
+		    android:id="@+id/imgView8"
+		    android:layout_width="wrap_content"
+		    android:layout_height="90dp"
+		    android:src="@drawable/nada_do_tinggi" />
+	    <TextView
+	        android:id="@+id/txtView08"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/imgView8"
+	        android:layout_centerVertical="true"
+	        android:text="Tekan pada tombol DO dan semua lubang nada atas terbuka" />
+	    
+    </LinearLayout>
+
+</ScrollView>
