@@ -62,10 +62,10 @@ public class SeruneActivity extends ActionBarActivity
 	}
 
 
-	// proses ketika ditekan pada
+	// proses ketika ditekan pada lubang nada
 	public boolean onTouch (View v, MotionEvent ev) 
 	{
-	    boolean handledHere = false;
+	    boolean kondisi = false;
 	
 	    final int action = ev.getAction();
 	
@@ -74,63 +74,61 @@ public class SeruneActivity extends ActionBarActivity
 	    
 	    
 	    switch (action) {
-	    case MotionEvent.ACTION_DOWN :
-	       handledHere = true;
-	       break;
-	
-	    case MotionEvent.ACTION_UP :
-	      int touchColor = getHotspotColor (R.id.warna, evX, evY);
-	
-	      int toleransi = 25;
-	       
-	       
-	       if (cekWarna(Color.MAGENTA, touchColor, toleransi)) 
-	       {
-	    	   sounddo();
-	       }
-	       else if (cekWarna (Color.BLUE, touchColor, toleransi))
-	       {
-	    	   soundre();
-	       }
-	       else if (cekWarna (Color.GRAY, touchColor, toleransi))
-	       {
-	    	   soundmi();
-	       }
-	       else if (cekWarna (Color.GREEN, touchColor, toleransi))
-	       {
-	    	   soundfa();
-	       }
-	       else if (cekWarna (Color.RED, touchColor, toleransi))
-	       {
-	    	   soundsol();
-	       }
-	       else if (cekWarna (Color.CYAN, touchColor, toleransi))
-	       {
-	    	   soundla();
-	       }
-	       else if (cekWarna (Color.YELLOW, touchColor, toleransi)) 
-	       {
-	    	   soundsi();
-	       }
-	       else if (cekWarna (Color.DKGRAY, touchColor, toleransi)) 
-	       {
-	    	   sounddoo();
-	       }
-	       else if (cekWarna (Color.WHITE, touchColor, toleransi)) 
-	       {
-	    	   toast ("Tekan Pada Lubang Nada Serune Kalee.");
-	       }
-	
-	       
-	       handledHere = true; 
-	       break;
-	
-	    default:
-	       handledHere = false;
+		    case MotionEvent.ACTION_DOWN :
+		       kondisi = true;
+		       break;
+		
+		    case MotionEvent.ACTION_UP :
+		      int touchColor = getHotspotColor (R.id.warna, evX, evY);
+		
+		      int toleransi = 25;
+		       
+		       
+		       if (cekWarna(Color.MAGENTA, touchColor, toleransi)) 
+		       {
+		    	   sounddo();
+		       }
+		       else if (cekWarna (Color.BLUE, touchColor, toleransi))
+		       {
+		    	   soundre();
+		       }
+		       else if (cekWarna (Color.GRAY, touchColor, toleransi))
+		       {
+		    	   soundmi();
+		       }
+		       else if (cekWarna (Color.GREEN, touchColor, toleransi))
+		       {
+		    	   soundfa();
+		       }
+		       else if (cekWarna (Color.RED, touchColor, toleransi))
+		       {
+		    	   soundsol();
+		       }
+		       else if (cekWarna (Color.CYAN, touchColor, toleransi))
+		       {
+		    	   soundla();
+		       }
+		       else if (cekWarna (Color.YELLOW, touchColor, toleransi)) 
+		       {
+		    	   soundsi();
+		       }
+		       else if (cekWarna (Color.DKGRAY, touchColor, toleransi)) 
+		       {
+		    	   sounddoo();
+		       }
+		       else if (cekWarna (Color.WHITE, touchColor, toleransi)) 
+		       {
+		    	   toast ("Tekan Pada Lubang Nada Serune Kalee.");
+		       }
+		       kondisi = true; 
+		       break;
+		
+		    default:
+		       kondisi = false;
 	    } // end switch
 	
 	    
-	    return handledHere;
+	    return kondisi;
 	}
 
 
@@ -354,14 +352,12 @@ public class SeruneActivity extends ActionBarActivity
 		
 	}
 
-
 	//method untuk menghentikan suara ketika tombol back ditekan
 	@Override
 	public void onBackPressed() {
 		//stopsound();
 		finish();
 	}
-	
 	
 	// passing ke RGB
 	public boolean cekWarna (int warna, int touchColor, int toleransi){
